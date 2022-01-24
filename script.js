@@ -102,7 +102,8 @@ song10.addEventListener('click', ()=>{
 masterPlay.addEventListener('click', ()=>{
     if(audioElement.paused || audioElement.currentTime<=0){
         audioElement.play();
-        masterPlay.src
+        masterPlay.removeAttribute('src');
+        masterPlay.src="pause.png"
         cove.style.opacity=1;
     }
     else{
@@ -170,7 +171,7 @@ buttonfb.addEventListener('click', ()=>{
         el1.innerHTML="Home";
         el2.innerHTML="Podcast";
         el3.innerHTML="Playlist";
-        el4.innerHTML="Go ad Free";
+        el4.innerHTML="Buy Pro";
         open=1;
     }
     else{
