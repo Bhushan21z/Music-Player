@@ -21,8 +21,8 @@ song9=document.querySelector('.song24');
 song10=document.querySelector('.song25');
 
 let songIndex = 0;
-let audioElement = new Audio('c1song/1.mp3');
-audioElement.src = `c1song/${songIndex+1}.mp3`;
+let audioElement = new Audio('1.mp3');
+audioElement.src = `${songIndex+1}.mp3`;
 let masterPlay = document.getElementById('masterPlay');
 
 let myProgressBar = document.getElementById('musicseekbar');
@@ -30,70 +30,70 @@ let songItems = Array.from(document.getElementsByClassName('song'));
 
 song1.addEventListener('click', ()=>{
         songIndex=0;
-        audioElement.src = `c1song/${songIndex+1}.mp3`;
+        audioElement.src = `${songIndex+1}.mp3`;
         audioElement.play();
         masterPlay.src="pause.png";
         cove.style.opacity=1;
 })
 song2.addEventListener('click', ()=>{
     songIndex=1;
-    audioElement.src = `c1song/${songIndex+1}.mp3`;
+    audioElement.src = `${songIndex+1}.mp3`;
     audioElement.play();
     
     cove.style.opacity=1;
 })
 song3.addEventListener('click', ()=>{
     songIndex=2;
-    audioElement.src = `c1song/${songIndex+1}.mp3`;
+    audioElement.src = `${songIndex+1}.mp3`;
     audioElement.play();
     masterPlay.src="pause.png";
     cove.style.opacity=1;
 })
 song4.addEventListener('click', ()=>{
     songIndex=3;
-    audioElement.src = `c1song/${songIndex+1}.mp3`;
+    audioElement.src = `${songIndex+1}.mp3`;
     audioElement.play();
     masterPlay.src="pause.png";
     cove.style.opacity=1;
 })
 song5.addEventListener('click', ()=>{
     songIndex=4;
-    audioElement.src = `c1song/${songIndex+1}.mp3`;
+    audioElement.src = `${songIndex+1}.mp3`;
     audioElement.play();
     masterPlay.src="pause.png";
     cove.style.opacity=1;
 })
 song6.addEventListener('click', ()=>{
     songIndex=5;
-    audioElement.src = `c1song/${songIndex+1}.mp3`;
+    audioElement.src = `${songIndex+1}.mp3`;
     audioElement.play();
     masterPlay.src="pause.png";
     cove.style.opacity=1;
 })
 song7.addEventListener('click', ()=>{
     songIndex=6;
-    audioElement.src = `c1song/${songIndex+1}.mp3`;
+    audioElement.src = `${songIndex+1}.mp3`;
     audioElement.play();
     masterPlay.src="pause.png";
     cove.style.opacity=1;
 })
 song8.addEventListener('click', ()=>{
     songIndex=7;
-    audioElement.src = `c1song/${songIndex+1}.mp3`;
+    audioElement.src = `${songIndex+1}.mp3`;
     audioElement.play();
     masterPlay.src="pause.png";
     cove.style.opacity=1;
 })
 song9.addEventListener('click', ()=>{
     songIndex=8;
-    audioElement.src = `c1song/${songIndex+1}.mp3`;
+    audioElement.src = `${songIndex+1}.mp3`;
     audioElement.play();
     masterPlay.src="pause.png";
     cove.style.opacity=1;
 })
 song10.addEventListener('click', ()=>{
     songIndex=9;
-    audioElement.src = `c1song/${songIndex+1}.mp3`;
+    audioElement.src = `${songIndex+1}.mp3`;
     audioElement.play();
     masterPlay.src="pause.png";
     cove.style.opacity=1;
@@ -112,12 +112,12 @@ masterPlay.addEventListener('click', ()=>{
     }
 })
 audioElement.addEventListener('timeupdate', ()=>{ 
-    progress = parseInt((audioElement.currentTime/audioElement.duration)* 100); 
+    progress = parseInt((audioElement.currentTime/audioElement.duration)* 1000); 
     myProgressBar.value = progress;
 })
 
 myProgressBar.addEventListener('change', ()=>{
-    audioElement.currentTime = myProgressBar.value * audioElement.duration/100;
+    audioElement.currentTime = myProgressBar.value * audioElement.duration/1000;
 })
 
 
@@ -130,7 +130,7 @@ document.getElementById('next').addEventListener('click', ()=>{
     else{
         songIndex += 1;
     }
-    audioElement.src = `c1song/${songIndex+1}.mp3`;
+    audioElement.src = `${songIndex+1}.mp3`;
     audioElement.currentTime = 0;
     audioElement.play();
     cove.style.opacity=1;
@@ -143,7 +143,7 @@ document.getElementById('previous').addEventListener('click', ()=>{
     else{
         songIndex -= 1;
     }
-    audioElement.src = `c1song/${songIndex+1}.mp3`;
+    audioElement.src = `${songIndex+1}.mp3`;
     audioElement.currentTime = 0;
     audioElement.play();
     cove.style.opacity=1;
