@@ -26,12 +26,14 @@ html {
     margin-top: 3vh;
     font-size: 0.6rem;
 }
+
 .search{
     margin-left: 2vw;
     margin-top: 1vh;
     display: block;
     text-align: center;
 }
+
 .search input[type=text] {
     padding: 5px;
     border: 2px solid black;
@@ -61,9 +63,16 @@ html {
     width: 6vw;
     margin-top: 3vh;
     margin-left: 4vw;
-    background-color: red;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 15px;
+}
+.logout button:hover{
+    height: 5vh;
+    margin-top: 2vh;
+    width: 8vw;
+    color: black;
+    background-color: red;
 }
 .logo{
     position: absolute;
@@ -142,7 +151,7 @@ nav ul{
     margin-left: 5px;
  }
  nav ul li{
-    padding-top: 20px;
+    padding-top: 30px;
     font-size: 0.7rem;
 }
 nav ul li img{
@@ -241,6 +250,11 @@ nav ul li img{
     height: 24vh;
     width:14vw;
     margin-top: 3vh;
+    cursor: pointer;
+}
+.song:hover{
+    height: 26vh;
+    width:16vw;
 }
 .cpic11{
     height: 20vh;
