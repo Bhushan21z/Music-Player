@@ -130,22 +130,7 @@ html {
     width: 2.5vw;
     height: 2.5vw;
 }
-#masterPlay{
-    cursor: pointer;
-}
-#masterPlay img{
-    width: 4vw;
-    height: 4vw;
-}
 
-#next img{
-    width: 4vw;
-    height: 4vw;
-}
-#previous img{
-    width: 4vw;
-    height: 4vw;
-}
 nav ul{
     margin-top: 20vh;
     margin-left: 5px;
@@ -186,33 +171,51 @@ nav ul li img{
 /*.micons{
    
 }*/
-.micons i{
+.micons{
+    display: flex;
     cursor: pointer;
-    height: 3vh;
-    width: 2.5vh;
-  
+    height: 4vh;
+    width: 20vh;
+    justify-content: space-around;
+}
+
+.mastplay {
+    background-image: url('newforward2.png');
+    background-size: cover;
+    width: 3vw;
+    height: 3vw;
+}
+
+.nex img{
+    width: 3vw;
+    height: 3vw;
+}
+.prev img{
+    width: 3vw;
+    height: 3vw;
 }
 
 #musicseekbar{
-    width: 80vw; 
+    width: 70vw; 
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .info{
     position: absolute;
-    bottom:1vh;
-    left: 5vw;
+    bottom:0vh;
+    left: 3.5vw;
     font-size: .6rem;
     display: flex;
 }
 .name{
-    margin-top: 15px;
+    margin-top: 60px;
 }
 .cove{
     opacity: 0;
 }
 .cove img{
-    height: 5vw;
+    height: 15vh;
     width: 6vw;
 }
 .volume{
