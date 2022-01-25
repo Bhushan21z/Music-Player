@@ -100,6 +100,9 @@ html {
     background-color: rgb(75, 75, 75);
     font-size: 0.5rem;
 }
+.ilogo{
+    margin-left: 6px;
+}
 .heading2{
     font-family: 'Dongle', sans-serif;
     font-size: 1.2rem;
