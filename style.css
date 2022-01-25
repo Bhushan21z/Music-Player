@@ -10,9 +10,6 @@ font-family: 'Lobster', cursive;*/
 html {
     font-size: 40px;
 }
-body{
-    overflow: hidden;
-}
 .webpage{
     background-image: url('BG.png');
     background-size: cover;
@@ -102,9 +99,6 @@ body{
     width: 4vw;
     background-color: rgb(75, 75, 75);
     font-size: 0.5rem;
-}
-.ilogo{
-    margin-left: 6px;
 }
 .heading2{
     font-family: 'Dongle', sans-serif;
@@ -239,10 +233,15 @@ nav ul li img{
     left: 48;
     bottom: 1vh;
 }
-
+body{
+    overflow: hidden;
+}
 /*.micons{
    
 }*/
+.ilogo{
+    margin-left: 6px;
+}
 .micons{
     display: flex;
     cursor: pointer;
@@ -424,7 +423,7 @@ nav ul li img{
     height: 20vh;
     width: 14vw;
     background-color: black;
-    background-image: url('6.jpg');
+    background-image: url('1.jpg');
     background-size: cover;
 }
 .sname21{
@@ -440,7 +439,7 @@ nav ul li img{
     height: 20vh;
     width: 14vw;
     background-color: black;
-    background-image: url('7.jpg');
+    background-image: url('2.jpg');
     background-size: cover;
 }
 .sname22{
@@ -456,7 +455,7 @@ nav ul li img{
     height: 20vh;
     width: 14vw;
     background-color: black;
-    background-image: url('8.jpg');
+    background-image: url('3.jpg');
     background-size: cover;
 }
 .sname23{
@@ -472,7 +471,7 @@ nav ul li img{
     height: 20vh;
     width: 14vw;
     background-color: black;
-    background-image: url('9.jpg');
+    background-image: url('4.jpg');
     background-size: cover;
 }
 .sname24{
@@ -488,9 +487,47 @@ nav ul li img{
     height: 20vh;
     width: 14vw;
     background-color: black;
-    background-image: url('10.jpg');
+    background-image: url('5.jpg');
     background-size: cover;
 }
 .sname25{
     font-size: 0.6rem;
 }
+#nextpage{
+    background-image: url('next.png');
+    background-size: cover;
+    height: 2vw;
+    width: 2vw;
+    position: absolute;
+    right: 6.5vw;
+    top: 38vh;
+}
+#prevpage{
+    background-image: url('previous.png');
+    background-size: cover;
+    height: 2vw;
+    width: 2vw;
+    position: absolute;
+    left: 10.5vw;
+    top: 38vh;
+}
+
+#nextpagec{
+    background-image: url('next.png');
+    background-size: cover;
+    height: 2vw;
+    width: 2vw;
+    position: absolute;
+    right: 6.5vw;
+    top: 68vh;
+}
+#prevpagec{
+    background-image: url('previous.png');
+    background-size: cover;
+    height: 2vw;
+    width: 2vw;
+    position: absolute;
+    left: 10.5vw;
+    top: 68vh;
+}
+
