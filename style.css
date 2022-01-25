@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Lobster&display=swap'); 
+/*font-family: 'Dongle', sans-serif;
+font-family: 'Lobster', cursive;*/
+
 *{
     padding: 0;
     margin: 0;
@@ -25,6 +30,7 @@ html {
     margin-left: 15vw;
     margin-top: 3vh;
     font-size: 0.6rem;
+    cursor: pointer;
 }
 
 .search{
@@ -58,7 +64,11 @@ html {
     width: 3vw;
     margin-right: 1vw;
 }
+.heading{
+    font-family: 'Lobster', cursive;
+}
 .logout button{
+    cursor: pointer;
     height: 4vh;
     width: 6vw;
     margin-top: 3vh;
@@ -91,28 +101,73 @@ html {
     font-size: 0.5rem;
 }
 .heading2{
-    font-size: 0.7rem;
+    font-family: 'Dongle', sans-serif;
+    font-size: 1.2rem;
     margin-left: 5vw;
-    margin-top:1vh ;
 }
 #h1{
     display: flex;
+    cursor: pointer;
+}
+#h1 img{
+    margin-top: 6px;
+}
+#h2 img{
+    margin-top: 7px;
+}
+#h3 img{
+    margin-top: 7px;
+}
+#h4 img{
+    margin-top: 7px;
+}
+#h1:hover{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#h1 img:hover{
+     height: 3vw;
+     width: 3vw;
 }
 #h2{
     display: flex;
 }
+#h2:hover{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#h2 img:hover{
+     height: 3vw;
+     width: 3vw;
+}
 #h3{
     display: flex;
 }
+#h3:hover{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#h3 img:hover{
+     height: 3vw;
+     width: 3vw;
+}
 #h4{
     display: flex;
+}
+#h4:hover{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+#h4 img:hover{
+     height: 3vw;
+     width: 3vw;
 }
 .musicbar{
     height: 13vh;
     position: absolute;
     width: 100vw;
     bottom: 0;
-    background-color: rgba(0, 0,0,0.8);
+    background-color: rgba(0, 0,0,0.9);
 
     color: white;
     display: flex;
@@ -137,7 +192,9 @@ nav ul{
  }
  nav ul li{
     padding-top: 30px;
-    font-size: 0.7rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-family: 'Dongle', sans-serif;
 }
 nav ul li img{
     height: 2.5vw;
@@ -145,17 +202,26 @@ nav ul li img{
 }
 
 .ilogo{
-    padding-top: 10vh;
+    padding-top: 8vh;
+    cursor: pointer;
 }
 .in img{
     padding-top: 10px;
     height: 3vw;
     width: 3vw;
 }
+.in img:hover{
+    height: 3.5vw;
+    width: 3.5vw;
+}
 .ig img{
     padding-top: 10px;
     height: 3vw;
     width: 3vw;
+}
+.ig img:hover{
+    height: 3.5vw;
+    width: 3.5vw;
 }
 
 .newclasslist{
@@ -231,7 +297,7 @@ nav ul li img{
     position: absolute;
     top:10vh;
     left: 10vw;
-    background-color: rgba(0, 0,0,0.6);
+    background-color: rgba(0, 0,0,0.5);
     height: 77vh;
     width: 86vw;
 }
@@ -242,7 +308,6 @@ nav ul li img{
     color: white;
 }
 .container1{
-    margin-top:1vh ;
     margin-left: 2vw;
     display: flex;
     height:30vh;
@@ -336,7 +401,6 @@ nav ul li img{
 
 
 .container2{
-    margin-top:2vh ;
     margin-left:2vw;
     display: flex;
     height:30vh;
@@ -423,5 +487,4 @@ nav ul li img{
 }
 .sname25{
     font-size: 0.6rem;
-    
 }
