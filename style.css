@@ -10,6 +10,9 @@ font-family: 'Lobster', cursive;*/
 html {
     font-size: 40px;
 }
+body{
+    overflow: hidden;
+}
 .webpage{
     background-image: url('BG.png');
     background-size: cover;
