@@ -39,7 +39,7 @@ let songname=[
 ]
 
 let songname2=[
-    "Udd Gaye","Brown Munde","Doja Cat","Drake","Rap-God","Excuses","Sterio","Dekh LE","Life goes on","Stay",
+    "Bekhayali","Butterfly Effect","Closer","Jalebi Baby","Kasoor","Ranjha","The Nights","Tum Sath Rehna","Watermelon Sugar","What makes you Beautiful",
 ]
 names=document.querySelector('.name');
 names.innerHTML= songname[0];
@@ -169,11 +169,11 @@ nextpagec.addEventListener('click', ()=>{
     if(f4==11) f4=1;
     if(f5==11) f5=1;
     
-     cpic21.style.backgroundImage= `url('${f1}.jpg')`;
-     cpic22.style.backgroundImage= `url('${f2}.jpg')`;
-     cpic23.style.backgroundImage= `url('${f3}.jpg')`;
-     cpic24.style.backgroundImage= `url('${f4}.jpg')`;
-     cpic25.style.backgroundImage= `url('${f5}.jpg')`;
+     cpic21.style.backgroundImage= `url('s${f1}.jpg')`;
+     cpic22.style.backgroundImage= `url('s${f2}.jpg')`;
+     cpic23.style.backgroundImage= `url('s${f3}.jpg')`;
+     cpic24.style.backgroundImage= `url('s${f4}.jpg')`;
+     cpic25.style.backgroundImage= `url('s${f5}.jpg')`;
      
      sname21.innerHTML=songname2[f1-1];
      sname22.innerHTML=songname2[f2-1];
@@ -191,11 +191,11 @@ prevpagec.addEventListener('click', ()=>{
    if(f4==0) f4=10;
    if(f5==0) f5=10;
    
-    cpic21.style.backgroundImage= `url('${f1}.jpg')`;
-    cpic22.style.backgroundImage= `url('${f2}.jpg')`;
-    cpic23.style.backgroundImage= `url('${f3}.jpg')`;
-    cpic24.style.backgroundImage= `url('${f4}.jpg')`;
-    cpic25.style.backgroundImage= `url('${f5}.jpg')`;
+    cpic21.style.backgroundImage= `url('s${f1}.jpg')`;
+    cpic22.style.backgroundImage= `url('s${f2}.jpg')`;
+    cpic23.style.backgroundImage= `url('s${f3}.jpg')`;
+    cpic24.style.backgroundImage= `url('s${f4}.jpg')`;
+    cpic25.style.backgroundImage= `url('s${f5}.jpg')`;
     
     sname21.innerHTML=songname2[f1-1];
     sname22.innerHTML=songname2[f2-1];
@@ -207,8 +207,8 @@ prevpagec.addEventListener('click', ()=>{
 
 
 song6.addEventListener('click', ()=>{
-    songIndex2=1;2
-    audioElement.src = `${f1}.mp3`;
+    songIndex2=1;
+    audioElement.src = `s${f1}.mp3`;
     audioElement.play();
     nexplay.style.backgroundImage = "url('pause.png')";
     cove.style.opacity=1;
@@ -216,7 +216,7 @@ song6.addEventListener('click', ()=>{
 })
 song7.addEventListener('click', ()=>{
     songIndex2=2;
-    audioElement.src = `${f2}.mp3`;
+    audioElement.src = `s${f2}.mp3`;
     audioElement.play();
     nexplay.style.backgroundImage = "url('pause.png')";
     cove.style.opacity=1;
@@ -224,7 +224,7 @@ song7.addEventListener('click', ()=>{
 })
 song8.addEventListener('click', ()=>{
     songIndex2=3;
-    audioElement.src = `${f3}.mp3`;
+    audioElement.src = `s${f3}.mp3`;
     audioElement.play();
     nexplay.style.backgroundImage = "url('pause.png')";
     cove.style.opacity=1;
@@ -232,7 +232,7 @@ song8.addEventListener('click', ()=>{
 })
 song9.addEventListener('click', ()=>{
     songIndex2=4;
-    audioElement.src = `${f4}.mp3`;
+    audioElement.src = `s${f4}.mp3`;
     audioElement.play();
     nexplay.style.backgroundImage = "url('pause.png')";
     cove.style.opacity=1;
@@ -240,7 +240,7 @@ song9.addEventListener('click', ()=>{
 })
 song10.addEventListener('click', ()=>{
     songIndex2=5;
-    audioElement.src = `${f5}.mp3`;
+    audioElement.src = `s${f5}.mp3`;
     audioElement.play();
     nexplay.style.backgroundImage = "url('pause.png')";
     cove.style.opacity=1;
