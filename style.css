@@ -109,6 +109,18 @@ html {
     display: flex;
     cursor: pointer;
 }
+/*.pointer{
+    height: 3.2vw;
+    width: 3.2vw;
+    position: absolute;
+    left: 0vw;
+    top: 24vh;
+    background-color:rgba(0, 0,0,0.3);
+    border-radius: 30px;
+}
+.h1d{
+    background-color:rgba(0, 0,0,0.3);
+}*/
 #h1 img{
     margin-top: 6px;
 }
@@ -163,7 +175,7 @@ html {
      width: 3vw;
 }
 .musicbar{
-    height: 13vh;
+    height: 12vh;
     position: absolute;
     width: 100vw;
     bottom: 0;
@@ -303,7 +315,7 @@ body{
     top:10vh;
     left: 10vw;
     background-color: rgba(0, 0,0,0.5);
-    height: 77vh;
+    height: 78vh;
     width: 86vw;
 }
 
@@ -423,7 +435,7 @@ body{
     height: 20vh;
     width: 14vw;
     background-color: black;
-    background-image: url('1.jpg');
+    background-image: url('s1.jpg');
     background-size: cover;
 }
 .sname21{
@@ -439,7 +451,7 @@ body{
     height: 20vh;
     width: 14vw;
     background-color: black;
-    background-image: url('2.jpg');
+    background-image: url('s2.jpg');
     background-size: cover;
 }
 .sname22{
@@ -455,7 +467,7 @@ body{
     height: 20vh;
     width: 14vw;
     background-color: black;
-    background-image: url('3.jpg');
+    background-image: url('s3.jpg');
     background-size: cover;
 }
 .sname23{
@@ -471,7 +483,7 @@ body{
     height: 20vh;
     width: 14vw;
     background-color: black;
-    background-image: url('4.jpg');
+    background-image: url('s4.jpg');
     background-size: cover;
 }
 .sname24{
@@ -487,7 +499,7 @@ body{
     height: 20vh;
     width: 14vw;
     background-color: black;
-    background-image: url('5.jpg');
+    background-image: url('s5.jpg');
     background-size: cover;
 }
 .sname25{
@@ -531,3 +543,8 @@ body{
     top: 68vh;
 }
 
+@media only screen and (max-width: 600px) {
+    .sidebar {
+      width: 0vh;
+    }
+  }
