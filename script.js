@@ -7,6 +7,9 @@ let el3 = document.querySelector('.h3d')
 let el4 = document.querySelector('.h4d')
 let open=0;
 cove=document.querySelector('.cove');
+let play1=1;
+let play2=0;
+
 
 let cpic11=document.querySelector('.cpic11');
 let cpic12=document.querySelector('.cpic12');
@@ -57,6 +60,7 @@ song9=document.querySelector('.song24');
 song10=document.querySelector('.song25');
 
 let songIndex1 = 1;
+let songIndex2 = 1;
 let audioElement = new Audio('1.mp3');
 audioElement.src = `${songIndex1}.mp3`;
 let masterPlay = document.getElementById('masterPlay');
@@ -116,44 +120,49 @@ prevpage.addEventListener('click', ()=>{
 
 
 song1.addEventListener('click', ()=>{
-        songIndex1=1;
+        songIndex1=t1;
         audioElement.src = `${t1}.mp3`;
         audioElement.play();
         nexplay.style.backgroundImage = "url('pause.png')";
         cove.style.opacity=1;
         names.innerHTML= songname[t1-1];
+        play1=1;play2=0;
 })
 song2.addEventListener('click', ()=>{
-    songIndex1=2;
+    songIndex1=t2;
     audioElement.src = `${t2}.mp3`;
     audioElement.play();
     nexplay.style.backgroundImage = "url('pause.png')";
     cove.style.opacity=1;
     names.innerHTML= songname[t2-1];
+    play1=1;play2=0;
 })
 song3.addEventListener('click', ()=>{
-    songIndex1=3;
+    songIndex1=t3;
     audioElement.src = `${t3}.mp3`;
     audioElement.play();
     nexplay.style.backgroundImage = "url('pause.png')";
     cove.style.opacity=1;
     names.innerHTML= songname[t3-1];
+    play1=1;play2=0;
 })
 song4.addEventListener('click', ()=>{
-    songIndex1=4;
+    songIndex1=t4;
     audioElement.src = `${t4}.mp3`;
     audioElement.play();
     nexplay.style.backgroundImage = "url('pause.png')";
     cove.style.opacity=1;
     names.innerHTML= songname[t4-1];
+    play1=1;play2=0;
 })
 song5.addEventListener('click', ()=>{
-    songIndex1=5;
+    songIndex1=t5;
     audioElement.src = `${t5}.mp3`;
     audioElement.play();
     nexplay.style.backgroundImage = "url('pause.png')";
     cove.style.opacity=1;
     names.innerHTML= songname[t5-1];
+    play1=1;play2=0;
 })
 
 songIndex2=1;
@@ -207,44 +216,49 @@ prevpagec.addEventListener('click', ()=>{
 
 
 song6.addEventListener('click', ()=>{
-    songIndex2=1;
+    songIndex2=f1;
     audioElement.src = `s${f1}.mp3`;
     audioElement.play();
     nexplay.style.backgroundImage = "url('pause.png')";
     cove.style.opacity=1;
     names.innerHTML= songname2[f1-1];
+    play1=0;play2=1;
 })
 song7.addEventListener('click', ()=>{
-    songIndex2=2;
+    songIndex2=f2;
     audioElement.src = `s${f2}.mp3`;
     audioElement.play();
     nexplay.style.backgroundImage = "url('pause.png')";
     cove.style.opacity=1;
     names.innerHTML= songname2[f2-1];
+    play1=0;play2=1;
 })
 song8.addEventListener('click', ()=>{
-    songIndex2=3;
+    songIndex2=f3;
     audioElement.src = `s${f3}.mp3`;
     audioElement.play();
     nexplay.style.backgroundImage = "url('pause.png')";
     cove.style.opacity=1;
     names.innerHTML= songname2[f3-1];
+    play1=0;play2=1;
 })
 song9.addEventListener('click', ()=>{
-    songIndex2=4;
+    songIndex2=f4;
     audioElement.src = `s${f4}.mp3`;
     audioElement.play();
     nexplay.style.backgroundImage = "url('pause.png')";
     cove.style.opacity=1;
     names.innerHTML= songname2[f4-1];
+    play1=0;play2=1;
 })
 song10.addEventListener('click', ()=>{
-    songIndex2=5;
+    songIndex2=f5;
     audioElement.src = `s${f5}.mp3`;
     audioElement.play();
     nexplay.style.backgroundImage = "url('pause.png')";
     cove.style.opacity=1;
     names.innerHTML= songname2[f5-1];
+    play1=0;play2=1;
 })
 
 masterPlay.addEventListener('click', ()=>{
@@ -269,11 +283,13 @@ myProgressBar.addEventListener('change', ()=>{
 })
 
 
+let temps;
 
-/*
 document.getElementById('next').addEventListener('click', ()=>{
+   if(play1==1){
+
     if(songIndex1>=10){
-        songIndex1 = 1
+        songIndex1 = 1;
     }
     else{
         songIndex1 += 1;
@@ -282,10 +298,26 @@ document.getElementById('next').addEventListener('click', ()=>{
     audioElement.currentTime = 0;
     audioElement.play();
     cove.style.opacity=1;
+    names.innerHTML= songname[songIndex1-1];
+  }
+  else{
+    if(songIndex2>=10){
+        songIndex2 = 1;
+    }
+    else{
+        songIndex2 += 1;
+    }
+    audioElement.src = `s${songIndex2}.mp3`;
+    audioElement.currentTime = 0;
+    audioElement.play();
+    cove.style.opacity=1;
+    names.innerHTML= songname2[songIndex2-1];
+  }
 })
 
 
 document.getElementById('previous').addEventListener('click', ()=>{
+    if(play1==1){
     songIndex1-=1;
     if(songIndex1==0){
         songIndex1=10;
@@ -294,20 +326,38 @@ document.getElementById('previous').addEventListener('click', ()=>{
     audioElement.currentTime = 0;
     audioElement.play();
     cove.style.opacity=1;
-})*/
+    names.innerHTML= songname[songIndex1-1];
+  }
+  else{
+    songIndex2-=1;
+    if(songIndex2==0){
+        songIndex2=10;
+    }
+    audioElement.src = `s${songIndex2}.mp3`;
+    audioElement.currentTime = 0;
+    audioElement.play();
+    cove.style.opacity=1;
+    names.innerHTML= songname2[songIndex2-1];
+  }
+})
 
+setInterval(()=>{
+    console.log(play1,play2);
+},1000);
 
+/*if(play2==1){
 document.getElementById('next').addEventListener('click', ()=>{
     if(songIndex2>=10){
-        songIndex2 = 1
+        songIndex2 = 1;
     }
     else{
         songIndex2 += 1;
     }
-    audioElement.src = `${songIndex2}.mp3`;
+    audioElement.src = `s${songIndex2}.mp3`;
     audioElement.currentTime = 0;
     audioElement.play();
     cove.style.opacity=1;
+    names.innerHTML= songname2[songIndex2-1];
 })
 
 
@@ -316,12 +366,13 @@ document.getElementById('previous').addEventListener('click', ()=>{
     if(songIndex2==0){
         songIndex2=10;
     }
-    audioElement.src = `${songIndex2}.mp3`;
+    audioElement.src = `s${songIndex2}.mp3`;
     audioElement.currentTime = 0;
     audioElement.play();
     cove.style.opacity=1;
+    names.innerHTML= songname2[songIndex2-1];
 })
-
+}*/
 
 
 
