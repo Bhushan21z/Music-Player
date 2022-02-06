@@ -520,7 +520,7 @@ body{
     width: 2vw;
     position: absolute;
     right: 6.5vw;
-    top: 38vh;
+    top: 34vh;
 }
 #prevpage{
     background-image: url('previous.png');
@@ -529,7 +529,7 @@ body{
     width: 2vw;
     position: absolute;
     left: 10.5vw;
-    top: 38vh;
+    top: 34vh;
 }
 
 #nextpagec{
